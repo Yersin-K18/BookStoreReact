@@ -4,21 +4,23 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-
-  width: 170px;
   height: 36px;
   background: #ffce1a;
   box-shadow: -21px 8px 9px rgba(254, 175, 56, 0.01), -12px 5px 8px rgba(254, 175, 56, 0.05),
     -5px 2px 6px rgba(254, 175, 56, 0.09), -1px 1px 3px rgba(254, 175, 56, 0.1),
     0px 0px 0px rgba(254, 175, 56, 0.1);
   border-radius: 8px;
+
+  span {
+    overflow: hidden;
+  }
 }
 .root:hover {
-    color: #FFCE1A;
-    background-color: white;
-    border: 1px solid #FFCE1A;
+  color: #ffce1a;
+  background-color: white;
+  border: 1px solid #ffce1a;
 
-    path {
-        stroke: #FFCE1A;
-    }
+  path {
+    stroke: #ffce1a;
+  }
 }

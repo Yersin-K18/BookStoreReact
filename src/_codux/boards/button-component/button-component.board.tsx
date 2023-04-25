@@ -3,9 +3,9 @@ import { ButtonComponent } from '../../../components/button-component/button-com
 
 export default createBoard({
     name: 'ButtonComponent',
-    Board: () => <ButtonComponent />,
+    Board: () => <ButtonComponent text="Add to backet" />,
     environmentProps: {
-        canvasHeight: 60,
-        canvasWidth: 213,
+        canvasHeight: 36,
+        canvasWidth: 155,
     },
 });
