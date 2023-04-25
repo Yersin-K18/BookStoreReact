@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+.root {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 18px;
+
+  background: #eaeaea;
+  border-radius: 12px;
+  width: 245px;
+  height: 39px;
+}
+.search-box {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  /* identical to box height */
+
+  text-align: start;
+
+  color: #959494;
+  background-color: inherit;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  min-width: 166px;
+  min-height: 19px;
+  border: none;
+}
+.iconSearch {
+  /* Search Icon */
+  width: 16px;
+  height: 16px;
+
+  margin-left: 15px;
+  cursor: pointer;
+}
