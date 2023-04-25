@@ -26,7 +26,7 @@ export const ProductComponent = ({
     return (
         <div className={classNames(styles.root, className)}>
             <div className={styles['img-product']}>
-                <img src={img} />
+                <img src={img} alt='img-product' />
             </div>
             <div className={styles['detail-product']}>
                 <div className={styles['about-product']}>
