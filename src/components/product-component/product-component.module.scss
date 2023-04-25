@@ -12,6 +12,10 @@
   height: 250px;
   overflow: hidden;
   border-radius: 5px;
+
+  img {
+    width: 100%;
+  }
 }
 .detail-product {
   width: 219px;
@@ -21,6 +25,7 @@
 }
 .desc-product {
   overflow: hidden;
+  text-overflow: ellipsis;
   font-family: Nunito Sans;
   font-style: normal;
   font-weight: 400;
@@ -29,6 +34,8 @@
   padding: 0;
   margin: 0;
   color: rgba(13, 8, 66, 0.52);
+  width: 185px;
+  height: 33px;
 }
 .ButtonAdd {
   width: 75%;
@@ -39,6 +46,10 @@
   line-height: 20px;
   font-style: normal;
   font-weight: 400;
+  width: 185px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   padding: 0;
   margin: 0;
 }
@@ -77,11 +88,11 @@
   // text-decoration-line: line-through;
 }
 .price-before::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 0px;
   left: -5px;
   top: 65%;
-  border-top: 1px solid #6C6C6C;
+  border-top: 1px solid #6c6c6c;
 }
