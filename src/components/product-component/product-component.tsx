@@ -26,21 +26,21 @@ export const ProductComponent = ({
     return (
         <div className={classNames(styles.root, className)}>
             <div className={styles['img-product']}>
-                <img src={img} alt='img-product' />
+                <img src={img} alt="img-product" />
             </div>
             <div className={styles['detail-product']}>
                 <div className={styles['about-product']}>
                     <h3 className={styles['name-product']}>{nameProduct}</h3>
-                    <p className={styles['desc-product']}>
-                        {descProduct}
-                    </p>
+                    <p className={styles['desc-product']}>{descProduct}</p>
                     <div className={styles['price-product']}>
                         <span className={styles.price}>$ {price}</span>
-                        {priceBefore && <span className={styles['price-before']}>$ {priceBefore}</span>}
+                        {priceBefore && (
+                            <span className={styles['price-before']}>$ {priceBefore}</span>
+                        )}
                     </div>
                 </div>
                 <ButtonComponent
-                    icon="/assets/logo.svg"
+                    icon="/src/assets/logo.svg"
                     text="Add to basket"
                     className={styles.ButtonAdd}
                 />

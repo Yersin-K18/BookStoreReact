@@ -2,21 +2,25 @@ import styles from './App.module.scss';
 import { SearchBoxComponent } from './components/search-box-component/search-box-component';
 import { ButtonComponent } from './components/button-component/button-component';
 import { BookComponent } from './components/book-component/book-component';
+import menu from './assets/menu.svg';
+import account from './assets/account.svg';
+import logo from './assets/logo.svg';
+import favorite from './assets/favorite.svg';
 
 function App() {
     return (
         <div className={styles.App}>
             <div className={styles.header}>
                 <div className={styles['header-left']}>
-                    <img src="/assets/menu.svg" alt="menu" />
+                    <img src={menu} alt="menu" />
                     <SearchBoxComponent />
                 </div>
                 <div className={styles['header-right']}>
                     <div className={styles['header-icon']}>
-                        <img src="/assets/account.svg" alt="account" />
-                        <img src="/assets/favorite.svg" alt="favorite" />
+                        <img src={account} alt="account" />
+                        <img src={favorite} alt="favorite" />
                     </div>
-                    <ButtonComponent icon="/assets/logo.svg" text={'Basket'} />
+                    <ButtonComponent icon={logo} text={'Basket'} />
                 </div>
             </div>
             <div className={styles['new-releases']}>
