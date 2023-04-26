@@ -47,3 +47,14 @@
     height: 18px;
   }
 }
+.new-releases {
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    font: 'Montserrat';
+    font-weight: 500;
+    size: 40px;
+    line-height: 48.76px;
+  }
+}

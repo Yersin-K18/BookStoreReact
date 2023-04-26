@@ -18,6 +18,11 @@ function App() {
                     <ButtonComponent icon="/assets/logo.svg" text={'Basket'} />
                 </div>
             </div>
+            <div className={styles['new-releases']}>
+                <h1>Ten sach nao do</h1>
+                <p>It's time to update your reading list with some of the latest and greatest releases in the literary world. From heart-pumping thrillers to captivating memoirs, this week's new releases offer something for everyone</p>
+                <ButtonComponent text='Subscribe' />
+            </div>
         </div>
     );
 }
