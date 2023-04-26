@@ -1,9 +1,9 @@
 .App {
-  text-align: center;
-  padding-right: 0px;
-  padding-left: 0px;
-  margin-right: 0px;
-  margin-left: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding-left: 6%;
+  padding-right: 6%;
 }
 
 .header {
@@ -12,8 +12,6 @@
   margin: 0px;
   padding-top: 35px;
   padding-bottom: 9px;
-  padding-right: 6%;
-  padding-left: 6%;
 }
 .header-icon {
   display: flex;
@@ -49,9 +47,7 @@
 }
 .new-releases {
   display: flex;
-  margin-top: 76px;
-  margin-right: 6%;
-  margin-left: 6%;
+  margin-top: 0px;
 }
 .new-releases-left {
   width: 50%;
@@ -61,7 +57,7 @@
   gap: 30px;
   font: 'Montserrat';
 
-  h1 {
+  h2 {
     font-weight: 500;
     font-size: 40px;
     line-height: 48.76px;
@@ -75,4 +71,14 @@
 }
 .new-releases-right {
   margin: 0 auto;
+}
+.top-sellers {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.slider {
+  display: flex;
+  justify-content: start;
+  gap: 40px;
 }

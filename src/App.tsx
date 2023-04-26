@@ -6,6 +6,7 @@ import menu from './assets/menu.svg';
 import account from './assets/account.svg';
 import logo from './assets/logo.svg';
 import favorite from './assets/favorite.svg';
+import { ProductComponent } from './components/product-component/product-component';
 
 function App() {
     return (
@@ -25,7 +26,7 @@ function App() {
             </div>
             <div className={styles['new-releases']}>
                 <div className={styles['new-releases-left']}>
-                    <h1>New Releases This Week</h1>
+                    <h2>New Releases This Week</h2>
                     <p>
                         It's time to update your reading list with some of the latest and greatest
                         releases in the literary world. From heart-pumping thrillers to captivating
@@ -34,7 +35,38 @@ function App() {
                     <ButtonComponent text="Subscribe" />
                 </div>
                 <div className={styles['new-releases-right']}>
-                    <BookComponent img='' />
+                    <BookComponent img="" />
+                </div>
+            </div>
+            <div className={styles['top-sellers']}>
+                <h2>Top Sellers</h2>
+                <div>
+                    <select name="genre" id="genre"> Choose a genre
+                        <option value="test">test</option>
+                        <option value="alo">alo</option>
+                        <option value="blo">blo</option>
+                        <option value="clo">clo</option>
+                    </select>
+                </div>
+                <div className={styles.slider}>
+                    <ProductComponent
+                        img="https://picsum.photos/180/250"
+                        nameProduct="random"
+                        descProduct="lorem"
+                        price="29"
+                    />
+                    <ProductComponent
+                        img="https://picsum.photos/180/250"
+                        nameProduct="random"
+                        descProduct="lorem"
+                        price="29"
+                    />
+                    <ProductComponent
+                        img="https://picsum.photos/180/250"
+                        nameProduct="random"
+                        descProduct="lorem"
+                        price="29"
+                    />
                 </div>
             </div>
         </div>
