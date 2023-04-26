@@ -7,15 +7,15 @@ function App() {
         <div className={styles.App}>
             <div className={styles.header}>
                 <div className={styles['header-left']}>
-                    <img src="/src/assets/menu.svg" alt="menu" />
+                    <img src="/public/assets/menu.svg" alt="menu" />
                     <SearchBoxComponent />
                 </div>
                 <div className={styles['header-right']}>
                     <div className={styles['header-icon']}>
-                        <img src="/src/assets/account.svg" alt="account" />
-                        <img src="/src/assets/favorite.svg" alt="favorite" />
+                        <img src="/public/assets/account.svg" alt="account" />
+                        <img src="/public/assets/favorite.svg" alt="favorite" />
                     </div>
-                    <ButtonComponent icon="/src/assets/logo.svg" text={'Basket'} />
+                    <ButtonComponent icon="/public/assets/logo.svg" text={'Basket'} />
                 </div>
             </div>
         </div>
