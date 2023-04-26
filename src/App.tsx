@@ -7,6 +7,7 @@ import account from './assets/account.svg';
 import logo from './assets/logo.svg';
 import favorite from './assets/favorite.svg';
 import { ProductComponent } from './components/product-component/product-component';
+import { SelectionComponent } from './components/selection-component/selection-component';
 
 function App() {
     return (
@@ -41,12 +42,7 @@ function App() {
             <div className={styles['top-sellers']}>
                 <h2>Top Sellers</h2>
                 <div>
-                    <select name="genre" id="genre"> Choose a genre
-                        <option value="test">test</option>
-                        <option value="alo">alo</option>
-                        <option value="blo">blo</option>
-                        <option value="clo">clo</option>
-                    </select>
+                    <SelectionComponent />
                 </div>
                 <div className={styles.slider}>
                     <ProductComponent
