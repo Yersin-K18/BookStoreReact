@@ -11,7 +11,6 @@ export default createBoard({
             }
             img={'https://picsum.photos/200/300'}
             price={'29.53'}
-            priceBefore={'30.25'}
         />
     ),
 });

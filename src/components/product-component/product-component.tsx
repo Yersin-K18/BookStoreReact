@@ -8,7 +8,7 @@ export interface ProductComponentProps {
     nameProduct: string;
     descProduct: string;
     price: string;
-    priceBefore: string;
+    priceBefore?: string;
 }
 
 /**
@@ -36,11 +36,11 @@ export const ProductComponent = ({
                     </p>
                     <div className={styles['price-product']}>
                         <span className={styles.price}>$ {price}</span>
-                        <span className={styles['price-before']}>$ {priceBefore}</span>
+                        {priceBefore && <span className={styles['price-before']}>$ {priceBefore}</span>}
                     </div>
                 </div>
                 <ButtonComponent
-                    icon="/src/assets/logo.svg"
+                    icon="/assets/logo.svg"
                     text="Add to basket"
                     className={styles.ButtonAdd}
                 />

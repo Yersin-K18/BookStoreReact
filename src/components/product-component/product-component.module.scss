@@ -6,6 +6,9 @@
   padding: 15px;
   border-radius: 10px;
   background-color: #ffffff;
+  box-shadow: 0px 23px 9px rgba(13, 8, 66, 0.01), 0px 13px 8px rgba(13, 8, 66, 0.05),
+    0px 6px 6px rgba(13, 8, 66, 0.09), 0px 1px 3px rgba(13, 8, 66, 0.1),
+    0px 0px 0px rgba(13, 8, 66, 0.1);
 }
 .img-product {
   width: 180px;
@@ -38,7 +41,7 @@
   height: 33px;
 }
 .ButtonAdd {
-  width: 75%;
+  width: 80%;
 }
 .name-product {
   font-family: Montserrat;
