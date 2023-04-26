@@ -14,7 +14,7 @@ export interface ButtonComponentProps {
 export const ButtonComponent = ({ className, icon, text }: ButtonComponentProps) => {
     return (
         <div className={classNames(styles.root, className)}>
-            {icon && <img src={icon} alt="" />}
+            {icon && <img src={icon} alt="" className={styles.icon} />}
             <span>{text}</span>
         </div>
     );

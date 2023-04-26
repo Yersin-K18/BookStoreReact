@@ -5,7 +5,7 @@ export default createBoard({
     name: 'ButtonComponent',
     Board: () => <ButtonComponent text="Add to backet" icon={'/src/assets/logo.svg'} />,
     environmentProps: {
-        canvasHeight: 36,
-        canvasWidth: 155,
+        canvasHeight: 44,
+        canvasWidth: 185,
     },
 });
