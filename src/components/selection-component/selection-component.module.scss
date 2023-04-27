@@ -78,7 +78,17 @@
     ),
     #eaeaea;
 }
-
 .dropdown-list__item:last-child {
   border-radius: 0 0 8px 8px;
+}
+.dropdown-list__item_selected {
+  border-left: 1.5px solid #0d0842;
+  :hover {
+    background: linear-gradient(
+        90deg,
+        rgba(167, 167, 167, 0.7) 46.24%,
+        rgba(234, 234, 234, 0) 121.6%
+      ),
+      #eaeaea;
+  }
 }
