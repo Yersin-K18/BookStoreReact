@@ -2,12 +2,13 @@ import styles from './App.module.scss';
 import { SearchBoxComponent } from './components/search-box-component/search-box-component';
 import { ButtonComponent } from './components/button-component/button-component';
 import { BookComponent } from './components/book-component/book-component';
-import menu from './assets/menu.svg';
-import account from './assets/account.svg';
-import logo from './assets/logo.svg';
-import favorite from './assets/favorite.svg';
 import { ProductComponent } from './components/product-component/product-component';
 import { SelectionComponent } from './components/selection-component/selection-component';
+import menu from './assets/menu.svg';
+import account from './assets/account.svg';
+import Basket from './assets/basket.svg';
+import favorite from './assets/favorite.svg';
+import logo from '../public/logo.svg';
 
 function App() {
     return (
@@ -22,7 +23,7 @@ function App() {
                         <img src={account} alt="account" />
                         <img src={favorite} alt="favorite" />
                     </div>
-                    <ButtonComponent icon={logo} text={'Basket'} />
+                    <ButtonComponent icon={Basket} text={'Basket'} />
                 </div>
             </div>
             <div className={styles['new-releases']}>
@@ -63,6 +64,53 @@ function App() {
                         descProduct="lorem"
                         price="29"
                     />
+                </div>
+            </div>
+            <div className={styles.Recommended}>
+                <h2>Recommended for you</h2>
+                <div>
+                    <SelectionComponent />
+                </div>
+                <div className={styles.slider}>
+                    <ProductComponent
+                        img="https://picsum.photos/180/250"
+                        nameProduct="random"
+                        descProduct="lorem"
+                        price="29"
+                    />
+                    <ProductComponent
+                        img="https://picsum.photos/180/250"
+                        nameProduct="random"
+                        descProduct="lorem"
+                        price="29"
+                    />
+                    <ProductComponent
+                        img="https://picsum.photos/180/250"
+                        nameProduct="random"
+                        descProduct="lorem"
+                        price="29"
+                    />
+                </div>
+            </div>
+            <div className={styles.new}>
+                <h2>News</h2>
+            </div>
+            <div className={styles.footer}>
+                <div className={styles['footer-upper']}>
+                    <div className={styles['footer-left']}>
+                        <img src={logo} alt="logo" />
+                    </div>
+                    <div className={styles['footer-right']}>
+                        Subscribe to stay tuned for new product and latest updates. Let’s do it!
+                    </div>
+                </div>
+                <div className={styles['footer-bottom']}>
+                    <ul>
+                        <li>Privacy Policy</li>
+                        <li>Terms of Use</li>
+                        <li>Sales and Refunds</li>
+                        <li>Legal</li>
+                    </ul>
                 </div>
             </div>
         </div>
