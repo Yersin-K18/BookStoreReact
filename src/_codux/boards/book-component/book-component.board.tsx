@@ -3,5 +3,5 @@ import { BookComponent } from '../../../components/book-component/book-component
 
 export default createBoard({
     name: 'BookComponent',
-    Board: () => <BookComponent img="" />,
+    Board: () => <BookComponent img="https://picsum.photos/200/300" />,
 });

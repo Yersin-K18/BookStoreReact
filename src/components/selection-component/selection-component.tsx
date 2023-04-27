@@ -11,16 +11,16 @@ export interface SelectionComponentProps {
  */
 export const SelectionComponent = ({ className }: SelectionComponentProps) => {
     return (
-        <div className={classNames(styles.root, className)}>
-            <select name="genre" id="genre">
-                <option value="none" selected disabled hidden>
-                    {'Choose a genre'}
-                </option>
-                <option value="test">test</option>
-                <option value="alo">alo</option>
-                <option value="blo">blo</option>
-                <option value="clo">clo</option>
-            </select>
+        <div className={classNames(styles.dropdown, className)}>
+            <div className={styles['dropdown-select']}>
+                <span>Choose a genre</span>
+                <i className="fa fa-caret-down icon"></i>
+            </div>
+            <div className={styles['dropdown-list']}>
+                <div className={styles['dropdown-list__item']}>Pepsi</div>
+                <div className={styles['dropdown-list__item']}>Coca</div>
+                <div className={styles['dropdown-list__item']}>Monster</div>
+            </div>
         </div>
     );
 };

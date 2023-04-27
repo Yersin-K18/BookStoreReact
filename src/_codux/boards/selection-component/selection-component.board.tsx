@@ -5,6 +5,5 @@ export default createBoard({
     name: 'SelectionComponent',
     Board: () => <SelectionComponent />,
     environmentProps: {
-        canvasHeight: 61,
     },
 });

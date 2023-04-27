@@ -11,12 +11,13 @@ export interface BookComponentProps {
  * To create custom component templates, see https://help.codux.com/kb/en/article/configuration-for-book-components-and-templates
  */
 export const BookComponent = ({ className, img }: BookComponentProps) => {
-    if (img == '') {
-        img = 'https://user-images.githubusercontent.com/24848110/33519396-7e56363c-d79d-11e7-969b-09782f5ccbab.png';
+    if (img === '') {
+        img =
+            'https://user-images.githubusercontent.com/24848110/33519396-7e56363c-d79d-11e7-969b-09782f5ccbab.png';
     }
     return (
         <div className={classNames(styles.root, className)}>
-            <img src={img} />
+            <img src={img} alt="" />
         </div>
     );
 };
