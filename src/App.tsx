@@ -8,7 +8,7 @@ import menu from './assets/menu.svg';
 import account from './assets/account.svg';
 import Basket from './assets/basket.svg';
 import favorite from './assets/favorite.svg';
-import logo from '../public/logo.svg';
+import logo from './assets/logo.svg';
 
 function App() {
     return (
