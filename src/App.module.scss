@@ -68,7 +68,8 @@
 .new-releases-right {
   margin: 0 auto;
 }
-.top-sellers .Recommended {
+.top-sellers,
+.Recommended {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -93,7 +94,6 @@
   }
 }
 .footer-right {
-  
 }
 .footer-bottom {
   ul {
