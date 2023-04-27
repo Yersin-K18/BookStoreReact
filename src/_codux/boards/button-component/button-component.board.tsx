@@ -3,6 +3,6 @@ import { ButtonComponent } from '../../../components/button-component/button-com
 
 export default createBoard({
     name: 'ButtonComponent',
-    Board: () => <ButtonComponent text="Add to backet" icon={'/src/assets/logo.svg'} />,
+    Board: () => <ButtonComponent text="Add to backet" icon={'/src/assets/basket.svg'} />,
     environmentProps: {},
 });

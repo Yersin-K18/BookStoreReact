@@ -68,9 +68,6 @@ function App() {
             </div>
             <div className={styles.Recommended}>
                 <h2>Recommended for you</h2>
-                <div>
-                    <SelectionComponent />
-                </div>
                 <div className={styles.slider}>
                     <ProductComponent
                         img="https://picsum.photos/180/250"

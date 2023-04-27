@@ -40,7 +40,7 @@ export const ProductComponent = ({
                     </div>
                 </div>
                 <ButtonComponent
-                    icon="/src/assets/logo.svg"
+                    icon="/src/assets/basket.svg"
                     text="Add to basket"
                     className={styles.ButtonAdd}
                 />
