@@ -67,6 +67,7 @@
 }
 .new-releases-right {
   margin: 0 auto;
+  width: 300px;
 }
 .top-sellers,
 .Recommended {
@@ -78,6 +79,7 @@
   display: flex;
   justify-content: start;
   gap: 40px;
+  overflow: hidden;
 }
 .new {
 }

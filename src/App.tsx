@@ -1,7 +1,6 @@
 import styles from './App.module.scss';
 import { SearchBoxComponent } from './components/search-box-component/search-box-component';
 import { ButtonComponent } from './components/button-component/button-component';
-import { BookComponent } from './components/book-component/book-component';
 import { ProductComponent } from './components/product-component/product-component';
 import { SelectionComponent } from './components/selection-component/selection-component';
 import menu from './assets/menu.svg';
@@ -9,6 +8,7 @@ import account from './assets/account.svg';
 import Basket from './assets/basket.svg';
 import favorite from './assets/favorite.svg';
 import logo from './assets/logo.svg';
+import { SlideshowComponent } from './components/slideshow-component/slideshow-component';
 
 function App() {
     return (
@@ -37,7 +37,7 @@ function App() {
                     <ButtonComponent text="Subscribe" />
                 </div>
                 <div className={styles['new-releases-right']}>
-                    <BookComponent img="" />
+                    <SlideshowComponent />
                 </div>
             </div>
             <div className={styles['top-sellers']}>

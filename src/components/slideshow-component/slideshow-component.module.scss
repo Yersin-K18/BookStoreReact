@@ -1,0 +1,26 @@
+.root {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.first-book {
+  position: relative;
+  z-index: 2;
+}
+.second-book {
+  position: relative;
+  z-index: 1;
+  left: -15%;
+  zoom: 0.9;
+}
+.third-book {
+  position: relative;
+  left: -35%;
+  z-index: 0;
+  zoom: 0.8;
+}
+.second-book:hover,
+.third-book:hover {
+  transform: translateX(45px);
+  transition: ease-in-out 0.35s;
+}
