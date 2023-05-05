@@ -9,10 +9,19 @@ import Basket from './assets/basket.svg';
 import favorite from './assets/favorite.svg';
 import logo from './assets/logo.svg';
 import { SlideshowComponent } from './components/slideshow-component/slideshow-component';
+import { useState } from 'react';
+import { LoginRegisterFormComponent } from './components/login-register-form-component/login-register-form-component';
 
 function App() {
+    const [showBoard, setShowBoard] = useState(false);
+
+    function handleClick() {
+        setShowBoard(true);
+    }
+
     return (
         <div className={styles.App}>
+            {showBoard && <LoginRegisterFormComponent />}
             <div className={styles.header}>
                 <div className={styles['header-left']}>
                     <img src={menu} alt="menu" />
@@ -20,7 +29,9 @@ function App() {
                 </div>
                 <div className={styles['header-right']}>
                     <div className={styles['header-icon']}>
-                        <img src={account} alt="account" />
+                        <div onClick={handleClick}>
+                            <img src={account} alt="account" />
+                        </div>
                         <img src={favorite} alt="favorite" />
                     </div>
                     <ButtonComponent icon={Basket} text={'Basket'} />
