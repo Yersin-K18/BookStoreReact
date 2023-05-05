@@ -1,7 +1,5 @@
 .root {
-  display: inline-block;
-  height: 250px;
-  width: 180px;
+  display: flex;
   background-color: #dc4a5c;
   overflow: hidden;
   img {
@@ -9,6 +7,8 @@
     height: 100%;
     object-fit: cover;
   }
+  min-width: 180px;
+  min-height: 250px;
 }
 .root:hover {
   img {
