@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './App.module.scss';
 import { SearchBoxComponent } from './components/search-box-component/search-box-component';
 import { ButtonComponent } from './components/button-component/button-component';
@@ -9,19 +10,11 @@ import Basket from './assets/basket.svg';
 import favorite from './assets/favorite.svg';
 import logo from './assets/logo.svg';
 import { SlideshowComponent } from './components/slideshow-component/slideshow-component';
-import { useState } from 'react';
 import { LoginRegisterFormComponent } from './components/login-register-form-component/login-register-form-component';
 
 function App() {
-    const [showBoard, setShowBoard] = useState(false);
-
-    function handleClick() {
-        setShowBoard(true);
-    }
-
     return (
         <div className={styles.App}>
-            {showBoard && <LoginRegisterFormComponent />}
             <div className={styles.header}>
                 <div className={styles['header-left']}>
                     <img src={menu} alt="menu" />
@@ -29,9 +22,9 @@ function App() {
                 </div>
                 <div className={styles['header-right']}>
                     <div className={styles['header-icon']}>
-                        <div onClick={handleClick}>
+                        <Link to="/login">
                             <img src={account} alt="account" />
-                        </div>
+                        </Link>
                         <img src={favorite} alt="favorite" />
                     </div>
                     <ButtonComponent icon={Basket} text={'Basket'} />
