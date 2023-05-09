@@ -10,7 +10,6 @@ import Basket from './assets/basket.svg';
 import favorite from './assets/favorite.svg';
 import logo from './assets/logo.svg';
 import { SlideshowComponent } from './components/slideshow-component/slideshow-component';
-import { LoginRegisterFormComponent } from './components/login-register-form-component/login-register-form-component';
 
 function App() {
     return (
