@@ -1,6 +1,7 @@
 import { Fragment } from 'react';
-import styles from './login-register-form-component.module.scss';
 import classNames from 'classnames';
+import styles from './login-register-form-component.module.scss';
+import { parseJwt } from '../../utils/jwt';
 
 export interface LoginRegisterFormComponentProps {
     className?: string;
@@ -35,22 +36,6 @@ export const LoginRegisterFormComponent = ({ className }: LoginRegisterFormCompo
             alert('Login Failed: ' + result.message);
         }
     };
-
-    function parseJwt(token: string) {
-        var base64Url = token.split('.')[1];
-        var base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
-        var jsonPayload = decodeURIComponent(
-            window
-                .atob(base64)
-                .split('')
-                .map(function (c) {
-                    return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
-                })
-                .join('')
-        );
-
-        return JSON.parse(jsonPayload);
-    }
 
     function isLogin() {
         if (localStorage.getItem('Username') != null) {
