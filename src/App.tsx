@@ -1,15 +1,17 @@
 import { Link } from 'react-router-dom';
-import styles from './App.module.scss';
 import { SearchBoxComponent } from './components/search-box-component/search-box-component';
 import { ButtonComponent } from './components/button-component/button-component';
 import { ProductComponent } from './components/product-component/product-component';
 import { SelectionComponent } from './components/selection-component/selection-component';
+import { SlideshowComponent } from './components/slideshow-component/slideshow-component';
+import styles from './App.module.scss';
+
+// Images
 import menu from './assets/menu.svg';
 import account from './assets/account.svg';
 import Basket from './assets/basket.svg';
 import favorite from './assets/favorite.svg';
 import logo from './assets/logo.svg';
-import { SlideshowComponent } from './components/slideshow-component/slideshow-component';
 
 function App() {
     return (
